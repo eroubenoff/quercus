@@ -6,7 +6,7 @@
  * Instead, add your own CSS in the custom.css file
  *************************************************************************/
 
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-}
+} */
 
 /* This is a hack for FireFox that the <b> tag does not work */
 strong,
@@ -46,32 +46,6 @@ video {
   user-select: none;
 }
 
-h1 {
-  font-size: 30px;
-  color: #333333;
-  margin: 30px 0 0 0;
-  padding: 0;
-  font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-h2 {
-  font-size: 24px;
-  color: #333333;
-  margin: 30px 0 0 0;
-  padding: 0;
-  font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-h3 {
-  font-size: 18px;
-  color: #333333;
-  margin: 10px 0 0 0;
-  padding: 0;
-  font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
 
 ul,
 ol {
@@ -90,20 +64,7 @@ hr {
   margin: 0 0 10px 0;
 }
 
-.menu-container {
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  background-color: #333333;
-  min-width: 300px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  box-shadow: 0 0px 4px rgb(0 0 0 / 32%), 0 0px 10px rgb(0 0 0 / 23%);
-}
+
 
 .menu {
   position: relative;

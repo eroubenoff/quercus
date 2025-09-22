@@ -1,0 +1,136 @@
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  background: url("../img/science.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+main {
+  flex: 1; /* this pushes the footer down */
+}
+
+/* Footer */
+footer, .footer-container {
+  background: #344a5e;;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  height: 10vh;
+}
+
+a {
+  color: #a1cbf4;
+}
+
+/* Menu styling */
+.menu-widget,
+.menu-embedding,
+.menu-index {
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+/* Content overlay */
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  min-height: 70vh;
+}
+
+/* Tables and images */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td, th {
+  border: none;
+  padding: 14px 18px;
+  vertical-align: top;
+  color: white;
+}
+
+td.image-cell {
+  text-align: center;
+}
+
+td img,
+figure img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 300px; */
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.desc {
+  color: white;
+}
+
+/* Values section */
+.values {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values li {
+  margin-bottom: 1rem;
+}
+
+.values strong {
+  color: #a1cbf4; /* brand color */
+}
+.menu-container {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  background-color: #344a5e;
+  min-width: 300px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: 0 0px 4px rgb(0 0 0 / 32%), 0 0px 10px rgb(0 0 0 / 23%);
+}
