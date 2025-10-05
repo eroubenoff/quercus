@@ -1,6 +1,11 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Override all fonts to use Roboto */
+* {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
 /* Global styles */
 html, body {
   height: 100%;
@@ -142,7 +147,7 @@ h2 {
 
 .menu .logo a {
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 30px;
   text-decoration: none;
   font-weight: 700;
@@ -181,7 +186,7 @@ h2 {
   transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -webkit-transition: opacity 0.1s ease-in-out;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -227,7 +232,7 @@ h2 {
   position: relative;
   margin: 0 auto;
   font-size: 16px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   max-width: 900px;
