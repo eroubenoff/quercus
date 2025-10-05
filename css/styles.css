@@ -1,3 +1,6 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Global styles */
 html, body {
   height: 100%;
@@ -8,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: sans-serif;
+  font-family: Roboto;
   color: white;
   text-align: center;
   line-height: 1.5;
@@ -93,7 +96,7 @@ figcaption {
 
 /* Values section */
 .values {
-  font-family: sans-serif;
+  font-family: Roboto;
   line-height: 1.6;
 }
 
@@ -120,6 +123,83 @@ h2 {
 .values strong {
   color: #a1cbf4; /* brand color */
 }
+/* Menu styles from frame.css */
+.menu {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.menu .menu-table {
+  padding: 0px 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.menu .logo {
+  margin-left: 20px;
+}
+
+.menu .logo a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  flex: 1 auto;
+  padding: 10px 0;
+}
+
+.menu .logo a:hover {
+  cursor: pointer;
+}
+
+.menu .menu-button {
+  width: 40px;
+  height: 40px;
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu .menu-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu .menu-items {
+  align-self: stretch;
+}
+
+.menu .menu-items>a,
+.menu .menu-items>div {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  flex: 1 auto;
+  transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu .menu-items>a:not(:last-child),
+.menu .menu-items>div:not(:last-child) {
+  margin-right: 25px;
+}
+
+.menu .menu-items>a:hover,
+.menu .menu-items>div:hover {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  cursor: pointer;
+}
+
 .menu-container {
   z-index: 2;
   position: relative;
@@ -133,4 +213,130 @@ h2 {
   -ms-user-select: none;
   user-select: none;
   box-shadow: 0 0px 4px rgb(0 0 0 / 32%), 0 0px 10px rgb(0 0 0 / 23%);
+}
+
+/* Content container styles from frame.css */
+.content-container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+}
+
+.content {
+  position: relative;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 900px;
+  overflow-x: auto;
+}
+
+.content-table {
+  padding: 40px 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.text {
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+/* Flex utility classes from frame.css */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-item {
+  margin: 0 20px;
+}
+
+/* Responsive menu styles from frame.css */
+@media screen and (max-width: 750px) {
+  .menu .menu-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu .menu-button:focus {
+    pointer-events: none;
+  }
+
+  .menu .menu-button:focus+.menu-items {
+    display: block;
+  }
+
+  .menu .menu-button:focus+.menu-items>a,
+  .menu .menu-button:focus+.menu-items>div {
+    display: block;
+  }
+
+  .menu .menu-items {
+    display: none;
+    width: 100%;
+    margin-bottom: 10px;
+    align-self: baseline;
+  }
+
+  .menu .menu-items:hover {
+    display: block;
+  }
+
+  .menu .menu-items>a:not(:last-child),
+  .menu .menu-items>div:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .menu .menu-items>a,
+  .menu .menu-items>div {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
